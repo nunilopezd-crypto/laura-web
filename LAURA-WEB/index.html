@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Laura — Our Universe</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         PANTALLA DE CONTRASEÑA
+    ========================== -->
+
+    <div id="loginScreen" class="login-screen">
+
+        <div class="login-content">
+
+            <div class="login-symbol">✦</div>
+
+            <span class="login-small">
+                PRIVATE UNIVERSE
+            </span>
+
+            <h1>FOR LAURA</h1>
+
+            <p class="login-subtitle">
+                Este universo es solo para ti
+            </p>
+
+            <div class="lock">
+                🔒
+            </div>
+
+            <p class="login-question">
+                Introduce la fecha para entrar
+            </p>
+
+            <input
+                id="passwordInput"
+                class="password-input"
+                type="text"
+                inputmode="numeric"
+                autocomplete="off"
+                placeholder="DD / M / YYYY"
+                maxlength="10"
+            >
+
+            <button
+                id="enterButton"
+                class="enter-button"
+            >
+                ENTRAR
+            </button>
+
+            <p
+                id="loginMessage"
+                class="login-message"
+            ></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         UNIVERSO
+    ========================== -->
+
+    <canvas id="universe"></canvas>
+
+
+    <!-- =========================
+         TÍTULO
+    ========================== -->
+
+    <div class="title">
+
+        <span>
+            FOR LAURA
+        </span>
+
+        <small>
+            our little universe
+        </small>
+
+    </div>
+
+
+    <!-- =========================
+         FOTOS
+    ========================== -->
+
+    <div id="photoPlanets"></div>
+
+
+    <!-- =========================
+         FOTO GRANDE
+    ========================== -->
+
+    <div
+        id="memory"
+        class="memory"
+    >
+
+        <div class="memory-card">
+
+            <button
+                id="closeMemory"
+                class="close-memory"
+                aria-label="Cerrar"
+            >
+                ×
+            </button>
+
+            <div class="memory-photo-container">
+
+                <img
+                    id="memoryPhoto"
+                    src=""
+                    alt="Nuestro recuerdo"
+                >
+
+            </div>
+
+            <h2 id="memoryTitle">
+                Nuestro recuerdo ♡
+            </h2>
+
+            <p id="memoryText">
+                Cada momento contigo forma parte
+                de nuestro pequeño universo.
+            </p>
+
+            <span
+                id="memoryDate"
+                class="memory-date"
+            >
+                PARA SIEMPRE
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
